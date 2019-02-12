@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="helloApp">
+    <head></head>
+    
+    <body>
+        <div ng-controller="helloCtrl">
+            <h2>Hello {{ name }} !</h2>
+            <h2>Hello <span ng-bind="name"></span>!</h2>
+
+
+        </div>
+        <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <script>
+        var helloApp = angular.module('helloApp',[]);
+        helloApp.controller('helloCtrl', ['$scope',function($scope){
+            $scope.name= 'Testdee';
+        }]);
+        
+        </script>
+        <form id="form">
+                Nom : <input type="text" class="champ" id="inName">
+            </br>
+
+                prénom : <input type="text"class="champ" id="inprenom">
+            </br>
+                pseudo : <input type="text" class="champ"id="inpseudo">
+            </br>
+                passwd : <input type="password"class="champ" id="inmdp">
+            </br>
+                confirmre passwd : <input type="password" class="champ"id="inconfirm">
+            </br>
+                age : <input type="text" class="champ" id="inage">
+            </br>
+
+                <select id="list"class="champ">
+                        <option value=""></option>
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="japon">Japon</option>
+                        <option value="espagne" >Espagne</option>
+                    </select>
+                    
+                
+                <script src="js/js4.js"></script>
+            </br>
+                <input type="checkbox" class="champ" id="myCheck" >
+                <label for="myCheck">recevoir emails</label>
+            </br>
+                <input type="radio" class="champ" id="rad1" name ="rad">
+                <label for="rad1">Homme</label>
+                <input type="radio" class="champ" id="rad2" name ="rad">
+                <label for="rad1">Femme</label>
+
+            </br>
+                <input type="submit" id="bsoumettre" value="soumttre">
+        </form>
+    </body>
+    
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="counterApp">
+    <head></head>
+    
+    <body ng-controller="CounterSavedCtrl">
+        <button ng-click="increment()">Incremente et save</button>
+            count: {{counter}}
+     
+        <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <script src="js/counterSaved.js"></script>
+       
+    </body>
+    
+</html>
